@@ -51,9 +51,9 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "an526@cornell.edu"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
   github: amlan-nayak
   twitter: _Amlaa
+  ORCID: 0009-0008-0697-2640
 #  patreon: DeanAttali
 #  youtube: "@daattali"
 #  whatsapp: 15551212
