@@ -24,10 +24,6 @@ navbar-links:
   Publications: "publications"
   Talks: "talks"
   Resume: "resume"
-  Other Links:
-    - Graduate Lab: "https://www.andrewhein.org/people"
-    - Website Template: "https://beautifuljekyll.com"
-
 
 ################
 # --- Logo --- #
