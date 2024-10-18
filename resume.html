@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-</head>
-<body>
-    <h1>My Resume</h1>
-    <embed src="/assets/cv.pdf" type="application/pdf" width="100%" height="600px" />
-</body>
-</html>
+---
+layout: page
+title: Resume
+use-site-title: true
+---
+
+<div id="pdf" style="height: 800px;"></div>
+<script src="/js/pdfobject.min.js"></script>
+<script>
+PDFObject.embed("https://amlan-nayak.github.io/cv.pdf", "#pdf");
+</script>
