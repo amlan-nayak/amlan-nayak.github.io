@@ -2,6 +2,12 @@
 layout: page
 title: Publications
 ---
+**2025**
+
+- **A brief natural history of misinformation**  
+  Ling-Wei Kong, Lucas Gallart, Abigail Grassick, Jay Love, Amlan Nayak, and Andrew Hein
+
+  In Review, . R. Soc. Interface
 
 
 **2024**
