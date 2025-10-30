@@ -5,9 +5,9 @@ subtitle: My Academic Website
 use-site-title: true
 ---
 
-Currently, I am a 2nd year PhD student at [Cornell University](https://www.cornell.edu/), working in the [Department of Computational Biology](https://cals.cornell.edu/computational-biology), advised by [Andrew Hein](https://cals.cornell.edu/andrew-hein). 
+Currently, I am a 3rd year PhD student at [Cornell University](https://www.cornell.edu/), working in the [Department of Computational Biology](https://cals.cornell.edu/computational-biology), advised by [Andrew Hein](https://cals.cornell.edu/andrew-hein). 
 
-My research interests mostly involve how decision-making, information transfer and movement affect the behavioral aspects of animal groups. In my PhD, I am working on the strategies used by both predator and prey to hunt and escape respectively. I am also interested in how these interactions evolve during the initiation of the escape event, and how it affects population demographics. 
+My research interests mostly involve how decision-making, information transfer and movement affect the behavioral aspects of animal groups. In my PhD, I am working on the strategies used by both predator and prey to hunt and escape respectively. I am interested in how these interactions evolve during the initiation of the escape event, and how it affects population demographics. 
 
 To do this, I am developing methods using real-time computer vision models alongside optimised hardware to conduct ultra-low latency closed loop experiments to understand how preys optimise their escape trajectories and to shed light on the computations they do to ensure this.
 

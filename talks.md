@@ -4,7 +4,17 @@ title: Talks
 ---
 
 Here is a list of my talks and presentations:
-- **TBD**
+
+- **Unraveling Prey Evasion Mechanisms**
+  *Oral Presentation at CSHL Zebrafish Neurobiology Meeting, Laurel Hollow, NY*  
+  November 20, 2025
+
+- **Unraveling Prey Evasion Mechanisms: Interactive Experiments With Zebrafish**
+  *Oral Presentation at Cornell Neuro Club, Ithaca, NY*  
+  October 22, 2025
+
+
+- **Unraveling Prey Evasion Mechanisms: Interactive Experiments With Zebrafish**
   *Oral Presentation at NITMB MathBio Convergence Conference, Chicago, IL*  
   August 11, 2025
 
