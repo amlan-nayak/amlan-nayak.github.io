@@ -1,21 +1,21 @@
 <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
       {% if site.title-img %}
-        <a class="navbar-brand navbar-brand-logo" href="{{ site.url }}"><img src="{{ site.title-img }}"/></a>
+        <a class="navbar-brand navbar-brand-logo" href="{{ site.url }}"><img src="{{ site.title-img }}" alt="{{ site.title }}"/></a>
       {% else %}
-        <a class="navbar-brand" href="{{ site.url }}">{{ site.title }}</a>
+        <a class="navbar-brand" href="{{ '/' | prepend: site.baseurl }}">{{ site.title }}</a>
       {% endif %}
     </div>
 
     <div class="collapse navbar-collapse" id="main-navbar">
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right" aria-label="Primary navigation">
       {% for link in site.navbar-links %}
         {% if link[1].first %}
           <li class="navlinks-container">
@@ -41,7 +41,7 @@
 	<div class="avatar-container">
 	  <div class="avatar-img-border">
 	    <a href="{{ site.url }} ">
-	      <img class="avatar-img" src="{{ page.image | prepend: site.baseurl | replace: '//', '/' }}" />
+      <img class="avatar-img" src="{{ page.image | prepend: site.baseurl | replace: '//', '/' }}" alt="" />
 		</a>
 	  </div>
 	</div>
@@ -49,7 +49,7 @@
 	<div class="avatar-container">
 	  <div class="avatar-img-border">
 	    <a href="{{ site.url }} ">
-	      <img class="avatar-img" src="{{ site.avatar | prepend: site.baseurl | replace: '//', '/' }}" />
+	      <img class="avatar-img" src="{{ site.avatar | prepend: site.baseurl | replace: '//', '/' }}" alt="Portrait of {{ site.author.name }}" />
 		</a>
 	  </div>
 	</div>

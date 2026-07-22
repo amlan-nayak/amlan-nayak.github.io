@@ -13,4 +13,6 @@
   {% capture linkurl %}{{ include.link[1] }}{% endcapture %}
 {% endif %}
 
-<a href="{{ linkurl }}">{{ include.link[0] }}</a>
+{% capture currenturl %}{{ page.url | remove: '.html' | remove: '/index' }}{% endcapture %}
+{% capture navurl %}/{{ include.link[1] }}{% endcapture %}
+<a href="{{ linkurl }}"{% if currenturl == navurl or page.url == linkurl %} class="active" aria-current="page"{% endif %}>{{ include.link[0] }}</a>

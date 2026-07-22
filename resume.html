@@ -1,14 +1,15 @@
 ---
 layout: page
-title: Resume
-use-site-title: true
+title: Curriculum Vitae
+subtitle: Research, education, publications, and presentations
+show-avatar: false
 ---
 
-
-
-
-<div id="pdf" style="height: 800px;"></div>
-<script src="/js/pdfobject.min.js"></script>
-<script>
-PDFObject.embed("https://amlan-nayak.github.io/cv.pdf", "#pdf");
-</script>
+<div class="cv-toolbar">
+  <p>The embedded viewer works best on desktop. On mobile, download the PDF for a more comfortable reading experience.</p>
+  <a class="button button-primary" href="{{ '/cv.pdf' | prepend: site.baseurl }}" download>Download CV <span aria-hidden="true">↓</span></a>
+</div>
+<div id="pdf" class="pdf-viewer" aria-label="Embedded curriculum vitae"></div>
+<noscript><p><a href="{{ '/cv.pdf' | prepend: site.baseurl }}">Open the CV as a PDF</a>.</p></noscript>
+<script src="{{ '/js/pdfobject.min.js' | prepend: site.baseurl }}"></script>
+<script>PDFObject.embed("{{ '/cv.pdf' | prepend: site.baseurl }}", "#pdf", { fallbackLink: "Your browser cannot display this PDF. <a href='{{ '/cv.pdf' | prepend: site.baseurl }}'>Download the CV</a>." });</script>

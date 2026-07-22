@@ -14,10 +14,10 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Amlan's Webpage
+title: Amlan Nayak
 
 # Short description of your site
-description: Personal Website
+description: Computational biology researcher studying animal decision-making, predator-prey interactions, and real-time computer vision.
 
 # --- Navigation bar options --- #
 
@@ -47,6 +47,7 @@ author:
   github: amlan-nayak
   twitter: _Amlaa
   ORCID: 0009-0008-0697-2640
+  linkedin: amlan-nayak
 
 
 rss-description: Lots of thoughts expressed in a few words
