@@ -10,7 +10,7 @@ body-class: home
 <section class="home-hero" aria-labelledby="hero-title">
   <div class="hero-copy">
     <p class="eyebrow">PhD researcher · Cornell University</p>
-    <h1 id="hero-title">Understanding how animals make decisions when every millisecond matters.</h1>
+    <h1 id="hero-title">How do animals decide when every millisecond matters?</h1>
     <p class="hero-lede">I study predator–prey interactions using behavioral experiments, real-time computer vision, and ultra-low-latency hardware.</p>
     <div class="hero-actions">
       <a class="button button-primary" href="{{ '/publications' | prepend: site.baseurl }}">Explore my research</a>
@@ -23,8 +23,8 @@ body-class: home
     </ul>
   </div>
   <figure class="hero-portrait">
-    <img src="{{ site.avatar | prepend: site.baseurl }}" alt="Portrait of Amlan Nayak">
-    <figcaption>Computational Biology at Cornell</figcaption>
+    <img src="{{ site.avatar | prepend: site.baseurl }}" alt="Amlan Nayak overlooking a mountain landscape" width="1536" height="1536">
+    <figcaption><span>Cornell University</span><span>Ithaca, New York</span></figcaption>
   </figure>
 </section>
 
@@ -71,6 +71,19 @@ body-class: home
       <p>Multi-species collaboration on shared structure in animal behavior.</p>
       <a class="text-link" href="https://www.pnas.org/doi/10.1073/pnas.2503962122">Read paper <span aria-hidden="true">↗</span></a>
     </article>
+  </div>
+</section>
+
+<section class="home-section talks-preview" aria-labelledby="talks-title">
+  <p class="eyebrow">Recent talks</p>
+  <div class="section-heading-row">
+    <h2 id="talks-title">Sharing work in progress</h2>
+    <a class="text-link" href="{{ '/talks' | prepend: site.baseurl }}">All talks <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="talk-preview-list">
+    <article><time datetime="2025-11-20"><span>Nov</span>20</time><div><h3>Unraveling Prey Evasion Mechanisms</h3><p>CSHL Zebrafish Neurobiology Meeting · Laurel Hollow, NY</p></div></article>
+    <article><time datetime="2025-10-22"><span>Oct</span>22</time><div><h3>Interactive Experiments With Zebrafish</h3><p>Cornell Neuro Club · Ithaca, NY</p></div></article>
+    <article><time datetime="2025-08-11"><span>Aug</span>11</time><div><h3>Interactive Experiments With Zebrafish</h3><p>NITMB MathBio Convergence Conference · Chicago, IL</p></div></article>
   </div>
 </section>
 

@@ -25,9 +25,8 @@ description: Computational biology researcher studying animal decision-making, p
 navbar-links:
   Home: ""
   Publications: "publications"
-  Blog: "blog"
   Talks: "talks"
-  Resume: "resume"
+  CV: "resume"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
