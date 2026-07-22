@@ -23,7 +23,7 @@ body-class: home
     </ul>
   </div>
   <figure class="hero-portrait">
-    <img src="{{ site.avatar | prepend: site.baseurl }}" alt="Amlan Nayak overlooking a mountain landscape" width="1536" height="1536">
+    <img src="{{ site.avatar | prepend: site.baseurl }}" srcset="{{ '/static/img/amlan_new-700.jpg' | prepend: site.baseurl }} 700w, {{ site.avatar | prepend: site.baseurl }} 1200w" sizes="(max-width: 767px) 90vw, 380px" alt="Amlan Nayak overlooking a mountain landscape">
     <figcaption><span>Cornell University</span><span>Ithaca, New York</span></figcaption>
   </figure>
 </section>

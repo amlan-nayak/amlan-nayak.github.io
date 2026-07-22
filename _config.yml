@@ -84,11 +84,7 @@ url-pretty: "amlan-nayak.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
 
-
-# Fill in your Google Analytics ID to track your website using GA
-
-# Google Tag Manager ID
-#gtm: ""
+# This site intentionally runs no analytics, tracking scripts, or ad tech.
 
 # Facebook App ID
 # fb_app_id: ""
@@ -204,6 +200,7 @@ prose:
 
 gems:
   - jekyll-paginate
+  - jekyll-sitemap
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189

@@ -15,7 +15,10 @@
   <link rel="alternate" type="application/rss+xml"
     title="{{ site.title }} {{ site.title-separator }} {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-  {% include gtm_head.html %}
+  <link rel="icon" type="image/svg+xml" href="{{ '/static/img/favicon.svg' | prepend: site.baseurl }}" />
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/static/img/favicon-32.png' | prepend: site.baseurl }}" />
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/static/img/favicon-16.png' | prepend: site.baseurl }}" />
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/static/img/apple-touch-icon.png' | prepend: site.baseurl }}" />
 
   {% if layout.common-ext-css %}
   {% for css in layout.common-ext-css %}
