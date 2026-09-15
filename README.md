@@ -6,8 +6,15 @@ and hosted on [GitHub Pages](https://pages.github.com/) at
 
 ## Editing content
 
-See [EDITING_GUIDE.md](EDITING_GUIDE.md) for where each page's content lives
-and how to add publications, talks, or blog posts.
+| Page | File |
+|---|---|
+| Home | `index.md` |
+| Publications | `publications.md` |
+| Talks | `talks.md` |
+| CV | `resume.html` embeds `cv.pdf` — replace that file |
+| Blog | `blog.html` lists posts; add new ones as `_posts/YYYY-MM-DD-title.md` |
+| Site title, nav links, socials | `_config.yml` |
+| Colors/fonts/spacing | `css/main.css` |
 
 ## Local preview
 
@@ -21,5 +28,4 @@ Then open `http://localhost:4000`. Requires Ruby + Bundler.
 ## Deployment
 
 Pushing to `master` triggers a GitHub Pages build automatically — nothing
-else to do. See the "Publishing" section of [EDITING_GUIDE.md](EDITING_GUIDE.md)
-for details.
+else to do.
