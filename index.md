@@ -16,7 +16,7 @@ body-class: home
     <p class="home-role">PhD student, Department of Computational Biology, Cornell University</p>
     <p>I study how animals make decisions under time pressure, using behavioral experiments, real-time computer vision, and low-latency hardware to understand predator&ndash;prey interactions and collective behavior.</p>
     <p class="contact-line">
-      <a href="mailto:{{ site.author.email }}">Email</a><span class="sep">·</span><a href="https://github.com/{{ site.author.github }}">GitHub</a><span class="sep">·</span><a href="https://orcid.org/{{ site.author.ORCID }}">ORCID</a><span class="sep">·</span><a href="{{ '/cv.pdf' | prepend: site.baseurl }}">CV</a>
+      <a href="mailto:{{ site.author.email }}">Email</a><span class="sep">·</span><a href="https://github.com/{{ site.author.github }}">GitHub</a><span class="sep">·</span><a href="https://orcid.org/{{ site.author.ORCID }}">ORCID</a><span class="sep">·</span><a href="https://scholar.google.com/citations?user={{ site.author.scholar }}">Scholar</a><span class="sep">·</span><a href="{{ '/cv.pdf' | prepend: site.baseurl }}">CV</a>
     </p>
   </div>
 </section>

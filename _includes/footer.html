@@ -5,6 +5,7 @@
       <li><a href="mailto:{{ site.author.email }}">Email</a></li>
       <li><a href="https://github.com/{{ site.author.github }}">GitHub</a></li>
       <li><a href="https://orcid.org/{{ site.author.ORCID }}">ORCID</a></li>
+      {% if site.author.scholar %}<li><a href="https://scholar.google.com/citations?user={{ site.author.scholar }}">Google Scholar</a></li>{% endif %}
       {% if site.author.linkedin %}<li><a href="https://linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a></li>{% endif %}
     </ul></nav>
     <p class="footer-meta">© {{ site.time | date: '%Y' }} {{ site.author.name }} · No analytics or tracking on this site</p>
