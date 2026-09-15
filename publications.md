@@ -7,15 +7,15 @@ show-avatar: false
 
 <div class="page-intro"><p>My work brings together behavioral ecology, quantitative analysis, and computational methods. My name is highlighted in each author list.</p></div>
 
-<section class="publication-year" aria-labelledby="pub-2026">
-  <h2 id="pub-2026">2026</h2>
+<section class="publication-year" aria-labelledby="pub-preprints">
+  <h2 id="pub-preprints">Preprints</h2>
   <ul class="publication-list">
     <li class="publication-card">
-      <div class="publication-meta"><span class="tag">PNAS</span><span class="status-badge">In review</span></div>
+      <div class="publication-meta"><span class="tag">bioRxiv</span><span class="status-badge">Submitted to PNAS</span></div>
       <div>
         <h3>Collective behavior drives diversification across the tree of ray-finned fishes</h3>
         <p class="authors">Jay Love, <strong>Amlan Nayak</strong>, Abigail G. Grassick, Ling-Wei Kong, Ella Henry, Michael A. Gil, Ashkaan K. Fahimipour, Matt Pennell, Andrew M. Hein</p>
-        <div class="publication-actions"><a class="text-link" href="https://doi.org/10.64898/2026.04.06.716557">View paper</a></div>
+        <div class="publication-actions"><a class="text-link" href="https://doi.org/10.64898/2026.04.06.716557">View preprint</a></div>
       </div>
     </li>
   </ul>

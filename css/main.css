@@ -706,6 +706,7 @@ td.gutter {
 
 @media (max-width: 767px) {
   .navbar-custom .navbar-collapse { border-top: 1px solid var(--line); box-shadow: none; }
+  .navbar-custom .navbar-collapse.in { background: var(--paper); backdrop-filter: none; -webkit-backdrop-filter: none; }
   .navbar-custom .avatar-container { display: none; }
   .intro-header { margin: 85px 0 28px; }
   .home-header { flex-direction: column; align-items: flex-start; padding: 90px 0 36px; }
