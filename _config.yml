@@ -44,7 +44,6 @@ timezone: "America/New_York"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
-paginate: 5
 
 kramdown:
   input: GFM
@@ -78,6 +77,5 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
 
-gems:
-  - jekyll-paginate
+plugins:
   - jekyll-sitemap
