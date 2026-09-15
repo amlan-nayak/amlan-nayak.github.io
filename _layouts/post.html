@@ -3,31 +3,19 @@ layout: base
 ---
 
 {% include header.html type="post" %}
-{% include mathjax.html %}
 
 <div class="container">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      
+
       <article role="main" class="blog-post">
         {{ content }}
       </article>
 
       {% if page.tags.size > 0 %}
       <div class="blog-tags">
-        Tags:
-        {% if site.link-tags %}
-        {% for tag in page.tags %}
-        <a href="/tag/{{ tag }}">{{ tag }}</a>
-        {% endfor %}
-        {% else %}
-        {{ page.tags | join: ", " }}
-        {% endif %}
+        Tags: {{ page.tags | join: ", " }}
       </div>
-      {% endif %}
-
-      {% if page.social-share %}
-      {% include social-share.html %}
       {% endif %}
 
       <ul class="pager blog-pager">
@@ -44,12 +32,6 @@ layout: base
         </li>
         {% endif %}
       </ul>
-
-      {% if page.comments %}
-      <div class="disqus-comments">
-        {% include disqus.html %}
-      </div>
-      {% endif %}
     </div>
   </div>
 </div>

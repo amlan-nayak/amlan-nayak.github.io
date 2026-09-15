@@ -7,99 +7,70 @@ show-avatar: false
 body-class: home
 ---
 
-<section class="home-hero" aria-labelledby="hero-title">
-  <div class="hero-copy">
-    <p class="eyebrow">PhD researcher · Cornell University</p>
-    <h1 id="hero-title">How do animals decide when every millisecond matters?</h1>
-    <p class="hero-lede">I study predator–prey interactions using behavioral experiments, real-time computer vision, and ultra-low-latency hardware.</p>
-    <div class="hero-actions">
-      <a class="button button-primary" href="{{ '/publications' | prepend: site.baseurl }}">Explore my research</a>
-      <a class="button button-secondary" href="{{ '/cv.pdf' | prepend: site.baseurl }}">Download CV <span aria-hidden="true">↓</span></a>
-    </div>
-    <ul class="profile-links" aria-label="Profile links">
-      <li><a href="mailto:{{ site.author.email }}">Email</a></li>
-      <li><a href="https://github.com/{{ site.author.github }}">GitHub</a></li>
-      <li><a href="https://orcid.org/{{ site.author.ORCID }}">ORCID</a></li>
-    </ul>
+<section class="home-header">
+  <div class="home-photo">
+    <img src="{{ site.avatar | prepend: site.baseurl }}" srcset="{{ '/static/img/amlan_new-700.jpg' | prepend: site.baseurl }} 700w, {{ site.avatar | prepend: site.baseurl }} 1200w" sizes="150px" alt="Amlan Nayak">
   </div>
-  <figure class="hero-portrait">
-    <img src="{{ site.avatar | prepend: site.baseurl }}" srcset="{{ '/static/img/amlan_new-700.jpg' | prepend: site.baseurl }} 700w, {{ site.avatar | prepend: site.baseurl }} 1200w" sizes="(max-width: 767px) 90vw, 380px" alt="Amlan Nayak overlooking a mountain landscape">
-    <figcaption><span>Cornell University</span><span>Ithaca, New York</span></figcaption>
-  </figure>
+  <div class="home-intro">
+    <h1>Amlan Nayak</h1>
+    <p class="home-role">PhD student, Department of Computational Biology, Cornell University</p>
+    <p>I study how animals make decisions under time pressure, using behavioral experiments, real-time computer vision, and low-latency hardware to understand predator&ndash;prey interactions and collective behavior.</p>
+    <p class="contact-line">
+      <a href="mailto:{{ site.author.email }}">Email</a><span class="sep">·</span><a href="https://github.com/{{ site.author.github }}">GitHub</a><span class="sep">·</span><a href="https://orcid.org/{{ site.author.ORCID }}">ORCID</a><span class="sep">·</span><a href="{{ '/cv.pdf' | prepend: site.baseurl }}">CV</a>
+    </p>
+  </div>
 </section>
 
 <section class="home-section" aria-labelledby="research-title">
-  <p class="eyebrow">Research focus</p>
+  <h2 id="research-title">Research</h2>
+  <p>I combine quantitative experiments and engineering to reveal the strategies animals use to hunt, escape, and share information.</p>
+  <ul class="plain-list">
+    <li><strong>Predator&ndash;prey dynamics</strong> &mdash; how pursuit and escape strategies emerge and change from the first instant of an interaction.</li>
+    <li><strong>Collective behavior</strong> &mdash; how movement, information transfer, and individual decisions shape animal groups.</li>
+    <li><strong>Interactive experiments</strong> &mdash; real-time vision models and optimized hardware for responsive, closed-loop experiments.</li>
+  </ul>
+</section>
+
+<section class="home-section" aria-labelledby="featured-title">
   <div class="section-heading-row">
-    <h2 id="research-title">From behavior to computation</h2>
-    <p>I combine quantitative experiments and engineering to reveal the strategies animals use to hunt, escape, and share information.</p>
+    <h2 id="featured-title">Selected publications</h2>
+    <a class="text-link" href="{{ '/publications' | prepend: site.baseurl }}">All publications</a>
   </div>
-  <div class="card-grid research-grid">
-    <article class="feature-card">
-      <span class="card-number">01</span>
-      <h3>Predator–prey dynamics</h3>
-      <p>How pursuit and escape strategies emerge and change from the first instant of an interaction.</p>
-    </article>
-    <article class="feature-card">
-      <span class="card-number">02</span>
-      <h3>Collective behavior</h3>
-      <p>How movement, information transfer, and individual decisions shape animal groups.</p>
-    </article>
-    <article class="feature-card">
-      <span class="card-number">03</span>
-      <h3>Interactive experiments</h3>
-      <p>Real-time vision models and optimized hardware for responsive, closed-loop experiments.</p>
-    </article>
-  </div>
+  <ul class="pub-list">
+    <li>
+      <span class="pub-year">2025</span>
+      <div>
+        <p class="pub-title">A brief natural history of misinformation</p>
+        <p class="pub-authors">Ling-Wei Kong, Lucas Gallart, Abigail Grassick, Jay Love, <strong>Amlan Nayak</strong>, and Andrew Hein</p>
+        <p class="pub-venue">Journal of the Royal Society Interface</p>
+      </div>
+    </li>
+    <li>
+      <span class="pub-year">2025</span>
+      <div>
+        <p class="pub-title"><a href="https://www.pnas.org/doi/10.1073/pnas.2503962122">Behavioral sequences across multiple animal species in the wild share common structural features</a></p>
+        <p class="pub-authors">Multi-species collaboration on shared structure in animal behavior.</p>
+        <p class="pub-venue">PNAS</p>
+      </div>
+    </li>
+  </ul>
 </section>
 
-<section class="home-section featured-section" aria-labelledby="featured-title">
-  <p class="eyebrow">Selected work</p>
+<section class="home-section" aria-labelledby="talks-title">
   <div class="section-heading-row">
-    <h2 id="featured-title">Recent publications</h2>
-    <a class="text-link" href="{{ '/publications' | prepend: site.baseurl }}">All publications <span aria-hidden="true">→</span></a>
+    <h2 id="talks-title">Talks</h2>
+    <a class="text-link" href="{{ '/talks' | prepend: site.baseurl }}">All talks</a>
   </div>
-  <div class="work-list">
-    <article class="work-item">
-      <div><span class="tag">2025</span><span class="tag">J. R. Soc. Interface</span></div>
-      <h3>A brief natural history of misinformation</h3>
-      <p>Ling-Wei Kong, Lucas Gallart, Abigail Grassick, Jay Love, <strong>Amlan Nayak</strong>, and Andrew Hein</p>
-    </article>
-    <article class="work-item">
-      <div><span class="tag">2025</span><span class="tag">PNAS</span></div>
-      <h3>Behavioral sequences across multiple animal species in the wild share common structural features</h3>
-      <p>Multi-species collaboration on shared structure in animal behavior.</p>
-      <a class="text-link" href="https://www.pnas.org/doi/10.1073/pnas.2503962122">Read paper <span aria-hidden="true">↗</span></a>
-    </article>
-  </div>
+  <ul class="talk-list-plain">
+    <li><time datetime="2025-11-20">Nov 2025</time><div><p class="talk-title">Unraveling Prey Evasion Mechanisms</p><p class="talk-venue">CSHL Zebrafish Neurobiology Meeting · Laurel Hollow, NY</p></div></li>
+    <li><time datetime="2025-10-22">Oct 2025</time><div><p class="talk-title">Interactive Experiments With Zebrafish</p><p class="talk-venue">Cornell Neuro Club · Ithaca, NY</p></div></li>
+    <li><time datetime="2025-08-11">Aug 2025</time><div><p class="talk-title">Interactive Experiments With Zebrafish</p><p class="talk-venue">NITMB MathBio Convergence Conference · Chicago, IL</p></div></li>
+  </ul>
 </section>
 
-<section class="home-section talks-preview" aria-labelledby="talks-title">
-  <p class="eyebrow">Recent talks</p>
-  <div class="section-heading-row">
-    <h2 id="talks-title">Sharing work in progress</h2>
-    <a class="text-link" href="{{ '/talks' | prepend: site.baseurl }}">All talks <span aria-hidden="true">→</span></a>
-  </div>
-  <div class="talk-preview-list">
-    <article><time datetime="2025-11-20"><span>Nov</span>20</time><div><h3>Unraveling Prey Evasion Mechanisms</h3><p>CSHL Zebrafish Neurobiology Meeting · Laurel Hollow, NY</p></div></article>
-    <article><time datetime="2025-10-22"><span>Oct</span>22</time><div><h3>Interactive Experiments With Zebrafish</h3><p>Cornell Neuro Club · Ithaca, NY</p></div></article>
-    <article><time datetime="2025-08-11"><span>Aug</span>11</time><div><h3>Interactive Experiments With Zebrafish</h3><p>NITMB MathBio Convergence Conference · Chicago, IL</p></div></article>
-  </div>
-</section>
-
-<section class="home-section split-section" aria-labelledby="story-title">
-  <div>
-    <p class="eyebrow">My story</p>
-    <h2 id="story-title">Physics roots, behavioral questions</h2>
-  </div>
-  <div class="story-copy">
-    <p>I am a PhD student in Cornell’s <a href="https://cals.cornell.edu/computational-biology">Department of Computational Biology</a>, advised by <a href="https://cals.cornell.edu/andrew-hein">Andrew Hein</a>.</p>
-    <p>I graduated from IISER Mohali in 2023 with a major in Physics and a minor in Data Science. My thesis on spatial variation of vigilance in meerkats was completed with Ariana Strandburg-Peshkin at the Max Planck Institute of Animal Behavior.</p>
-    <p class="personal-note"><strong>Beyond research:</strong> cooking new cuisines, board games, podcasts, exploring music, and following FC Barcelona.</p>
-  </div>
-</section>
-
-<section class="contact-banner" aria-label="Contact">
-  <div><p class="eyebrow">Let’s connect</p><h2>Interested in animal behavior, interactive experiments, or collaboration?</h2></div>
-  <a class="button button-light" href="mailto:{{ site.author.email }}">Get in touch</a>
+<section class="home-section" aria-labelledby="story-title">
+  <h2 id="story-title">Background</h2>
+  <p>I am a PhD student in Cornell&rsquo;s <a href="https://cals.cornell.edu/computational-biology">Department of Computational Biology</a>, advised by <a href="https://cals.cornell.edu/andrew-hein">Andrew Hein</a>.</p>
+  <p>I graduated from IISER Mohali in 2023 with a major in Physics and a minor in Data Science. My thesis on spatial variation of vigilance in meerkats was completed with Ariana Strandburg-Peshkin at the Max Planck Institute of Animal Behavior.</p>
+  <p>Outside of research: cooking new cuisines, board games, podcasts, exploring music, and following FC Barcelona.</p>
 </section>
